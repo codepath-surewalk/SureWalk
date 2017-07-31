@@ -33,15 +33,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k17-nN-H4v" userLabel="RequestRideSegue">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k17-nN-H4v" userLabel="RequestRideSegue">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                         <connections>
                                             <segue destination="pfG-bX-wME" kind="show" id="j6O-zd-Ivj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="k17-nN-H4v" firstAttribute="leading" secondItem="yzp-GJ-hRn" secondAttribute="leading" id="0Mp-CL-rCe"/>
+                                    <constraint firstAttribute="bottom" secondItem="k17-nN-H4v" secondAttribute="bottom" id="3Ka-3i-zfT"/>
+                                    <constraint firstAttribute="height" constant="128" id="E3a-x5-bDm"/>
+                                    <constraint firstAttribute="trailing" secondItem="k17-nN-H4v" secondAttribute="trailing" id="FJb-R4-mnj"/>
+                                    <constraint firstItem="k17-nN-H4v" firstAttribute="top" secondItem="yzp-GJ-hRn" secondAttribute="top" id="Fm2-39-ie8"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-1u-TIC">
                                 <rect key="frame" x="0.0" y="411" width="375" height="128"/>
@@ -54,17 +60,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZW-aE-9Wq" userLabel="ScheduleRideSegue">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="120"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="kFG-f1-G1J"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZW-aE-9Wq" userLabel="ScheduleRideSegue">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                         <connections>
                                             <segue destination="nPv-sC-GBk" kind="presentation" id="Tn8-mc-tPa"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.78885909946282018" green="0.79063690224678951" blue="0.81776593281672549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fZW-aE-9Wq" firstAttribute="top" secondItem="vtW-1u-TIC" secondAttribute="top" id="CIR-PR-2ya"/>
+                                    <constraint firstAttribute="height" constant="128" id="QvJ-or-OFB"/>
+                                    <constraint firstItem="fZW-aE-9Wq" firstAttribute="leading" secondItem="vtW-1u-TIC" secondAttribute="leading" id="Tbe-Ze-cIz"/>
+                                    <constraint firstAttribute="bottom" secondItem="fZW-aE-9Wq" secondAttribute="bottom" id="czN-Dr-JZc"/>
+                                    <constraint firstAttribute="trailing" secondItem="fZW-aE-9Wq" secondAttribute="trailing" id="oei-sW-wH9"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bie-I4-Vmt">
                                 <rect key="frame" x="0.0" y="539" width="375" height="128"/>
@@ -77,15 +87,24 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-Qc-RgA" userLabel="AboutSegue">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="120"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-Qc-RgA" userLabel="AboutSegue">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                         <connections>
                                             <segue destination="WPB-8Z-HXg" kind="presentation" id="qc8-rv-uPh"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.68460640282096352" green="0.68614925777400526" blue="0.70969301615005886" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="S3j-Qc-RgA" secondAttribute="trailing" id="3AK-G6-aEV"/>
+                                    <constraint firstItem="CZ0-j6-D9x" firstAttribute="leading" secondItem="Bie-I4-Vmt" secondAttribute="leading" constant="39" id="9n3-6r-5IH"/>
+                                    <constraint firstItem="S3j-Qc-RgA" firstAttribute="leading" secondItem="Bie-I4-Vmt" secondAttribute="leading" id="DXo-ah-ZHE"/>
+                                    <constraint firstAttribute="bottom" secondItem="S3j-Qc-RgA" secondAttribute="bottom" id="FHj-Fa-rjh"/>
+                                    <constraint firstItem="S3j-Qc-RgA" firstAttribute="top" secondItem="Bie-I4-Vmt" secondAttribute="top" id="MfI-IO-fNe"/>
+                                    <constraint firstItem="CZ0-j6-D9x" firstAttribute="centerY" secondItem="Bie-I4-Vmt" secondAttribute="centerY" id="Y9M-WB-4cZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="CZ0-j6-D9x" secondAttribute="trailing" constant="289" id="hQJ-JK-Ekq"/>
+                                    <constraint firstAttribute="height" constant="128" id="rcf-jc-m37"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SURE Walk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ1-wN-br0">
                                 <rect key="frame" x="28" y="101" width="191" height="55"/>
