@@ -637,14 +637,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-7B-w3f">
-                                        <rect key="frame" x="8" y="8" width="305" height="30"/>
+                                        <rect key="frame" x="28" y="8" width="285" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.74901960784313726" green="0.3411764705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-bJ-QRc">
-                                        <rect key="frame" x="8" y="47" width="305" height="30"/>
+                                        <rect key="frame" x="28" y="47" width="285" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.74901960784313726" green="0.3411764705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -662,6 +662,14 @@
                                             <action selector="onConfirm:" destination="pfG-bX-wME" eventType="touchUpInside" id="2aX-7K-tNE"/>
                                         </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="map-pin-red-small" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-YH-rU2">
+                                        <rect key="frame" x="5" y="11" width="15" height="24"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="map-pin-green-small" translatesAutoresizingMaskIntoConstraints="NO" id="DQA-Ae-aX0">
+                                        <rect key="frame" x="6" y="48" width="15" height="24"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -760,7 +768,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BjH-aR-tnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3382" y="320"/>
+            <point key="canvasLocation" x="3381.5999999999999" y="319.79010494752629"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="g1Z-lY-YiK">
@@ -1069,7 +1077,9 @@
     </scenes>
     <resources>
         <image name="map-pin-gray" width="30" height="48"/>
+        <image name="map-pin-green-small" width="15" height="24"/>
         <image name="map-pin-red" width="30" height="48"/>
+        <image name="map-pin-red-small" width="15" height="24"/>
         <image name="orange-close" width="20" height="20"/>
         <image name="sideAdjusted_surewalk_map" width="450" height="515"/>
         <image name="surewalkGirl" width="225" height="225"/>
