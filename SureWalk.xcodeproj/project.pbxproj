@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38C0D1AA79BB24FEEEA78DC4 /* Pods_SureWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC7692054A96B749A7D98EB /* Pods_SureWalk.framework */; };
+		3B2E45061F2EB97200A5BBF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45051F2EB97200A5BBF9 /* AppDelegate.swift */; };
+		3B2E450B1F2EB97200A5BBF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E45091F2EB97200A5BBF9 /* Main.storyboard */; };
+		3B2E450D1F2EB97200A5BBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E450C1F2EB97200A5BBF9 /* Assets.xcassets */; };
+		3B2E45101F2EB97200A5BBF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E450E1F2EB97200A5BBF9 /* LaunchScreen.storyboard */; };
+		3B2E451B1F2EB97200A5BBF9 /* SureWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E451A1F2EB97200A5BBF9 /* SureWalkTests.swift */; };
+		3B2E45261F2EB97200A5BBF9 /* SureWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45251F2EB97200A5BBF9 /* SureWalkUITests.swift */; };
+		3B2E45351F2EB99B00A5BBF9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45341F2EB99B00A5BBF9 /* API.swift */; };
+		3B2E45371F2EB9AB00A5BBF9 /* Sanitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45361F2EB9AB00A5BBF9 /* Sanitation.swift */; };
+		3B2E453A1F2EB9CD00A5BBF9 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45391F2EB9CD00A5BBF9 /* LocationCell.swift */; };
+		3B2E453C1F2EB9DC00A5BBF9 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E453B1F2EB9DC00A5BBF9 /* AlertView.swift */; };
+		3B2E453F1F2EBA1B00A5BBF9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E453E1F2EBA1B00A5BBF9 /* SignInViewController.swift */; };
+		3B2E45411F2EBA2500A5BBF9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45401F2EBA2500A5BBF9 /* SignupViewController.swift */; };
+		3B2E45431F2EBA3200A5BBF9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45421F2EBA3200A5BBF9 /* RootViewController.swift */; };
+		3B2E45451F2EBA3A00A5BBF9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45441F2EBA3A00A5BBF9 /* MenuViewController.swift */; };
+		3B2E45471F2EBA4800A5BBF9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */; };
+		3B2E45491F2EBA5200A5BBF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */; };
+		3B2E454B1F2EBA5B00A5BBF9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */; };
+		3B2E454D1F2EBA6B00A5BBF9 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */; };
+		3B2E454F1F2EBA7400A5BBF9 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */; };
+		3B2E45511F2EBA8200A5BBF9 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */; };
+		3B2E45531F2EBA8D00A5BBF9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */; };
+		466B0AF008370EE8370EA7EB /* Pods_SureWalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E97C5F9C2E03A72F99F467 /* Pods_SureWalkTests.framework */; };
+		A115DF435E58A2ECA063E7D2 /* Pods_SureWalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437AA8CCCAF8DDAA0EA4E668 /* Pods_SureWalkUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B2E45171F2EB97200A5BBF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B2E44FA1F2EB97200A5BBF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B2E45011F2EB97200A5BBF9;
+			remoteInfo = SureWalk;
+		};
+		3B2E45221F2EB97200A5BBF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B2E44FA1F2EB97200A5BBF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B2E45011F2EB97200A5BBF9;
+			remoteInfo = SureWalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15377E5072CDC2BB2CD9E21A /* Pods-SureWalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkTests/Pods-SureWalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B2E45021F2EB97200A5BBF9 /* SureWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SureWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E45051F2EB97200A5BBF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B2E450A1F2EB97200A5BBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B2E450C1F2EB97200A5BBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B2E450F1F2EB97200A5BBF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B2E45111F2EB97200A5BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2E45161F2EB97200A5BBF9 /* SureWalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SureWalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E451A1F2EB97200A5BBF9 /* SureWalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SureWalkTests.swift; sourceTree = "<group>"; };
+		3B2E451C1F2EB97200A5BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2E45211F2EB97200A5BBF9 /* SureWalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SureWalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E45251F2EB97200A5BBF9 /* SureWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SureWalkUITests.swift; sourceTree = "<group>"; };
+		3B2E45271F2EB97200A5BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2E45341F2EB99B00A5BBF9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3B2E45361F2EB9AB00A5BBF9 /* Sanitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sanitation.swift; sourceTree = "<group>"; };
+		3B2E45391F2EB9CD00A5BBF9 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		3B2E453B1F2EB9DC00A5BBF9 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		3B2E453E1F2EBA1B00A5BBF9 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3B2E45401F2EBA2500A5BBF9 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		3B2E45421F2EBA3200A5BBF9 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3B2E45441F2EBA3A00A5BBF9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		437AA8CCCAF8DDAA0EA4E668 /* Pods_SureWalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SureWalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB731C182B7612E5006ECF5 /* Pods-SureWalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkUITests/Pods-SureWalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BAA8037143B26411B7B7E383 /* Pods-SureWalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkTests/Pods-SureWalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		C75F87F5565EEC65961E69D7 /* Pods-SureWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalk/Pods-SureWalk.release.xcconfig"; sourceTree = "<group>"; };
+		E2E97C5F9C2E03A72F99F467 /* Pods_SureWalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SureWalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA38198A8E3CA07BFFEE6A01 /* Pods-SureWalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkUITests/Pods-SureWalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBC7692054A96B749A7D98EB /* Pods_SureWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SureWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89144D7481968D59AFB8465 /* Pods-SureWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalk/Pods-SureWalk.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B2E44FF1F2EB97200A5BBF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C0D1AA79BB24FEEEA78DC4 /* Pods_SureWalk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E45131F2EB97200A5BBF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466B0AF008370EE8370EA7EB /* Pods_SureWalkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E451E1F2EB97200A5BBF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A115DF435E58A2ECA063E7D2 /* Pods_SureWalkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B2E44F91F2EB97200A5BBF9 = {
+			isa = PBXGroup;
+			children = (
+				3B2E45041F2EB97200A5BBF9 /* SureWalk */,
+				3B2E45191F2EB97200A5BBF9 /* SureWalkTests */,
+				3B2E45241F2EB97200A5BBF9 /* SureWalkUITests */,
+				3B2E45031F2EB97200A5BBF9 /* Products */,
+				7A2E3D5845AD3CA04B0C974F /* Pods */,
+				7B58480F13AF6440D3029907 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B2E45031F2EB97200A5BBF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E45021F2EB97200A5BBF9 /* SureWalk.app */,
+				3B2E45161F2EB97200A5BBF9 /* SureWalkTests.xctest */,
+				3B2E45211F2EB97200A5BBF9 /* SureWalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B2E45041F2EB97200A5BBF9 /* SureWalk */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E45051F2EB97200A5BBF9 /* AppDelegate.swift */,
+				3B2E45091F2EB97200A5BBF9 /* Main.storyboard */,
+				3B2E45331F2EB99100A5BBF9 /* Helper Classes */,
+				3B2E45381F2EB9C000A5BBF9 /* Views */,
+				3B2E453D1F2EBA0700A5BBF9 /* View Controllers */,
+				3B2E450C1F2EB97200A5BBF9 /* Assets.xcassets */,
+				3B2E450E1F2EB97200A5BBF9 /* LaunchScreen.storyboard */,
+				3B2E45111F2EB97200A5BBF9 /* Info.plist */,
+			);
+			path = SureWalk;
+			sourceTree = "<group>";
+		};
+		3B2E45191F2EB97200A5BBF9 /* SureWalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E451A1F2EB97200A5BBF9 /* SureWalkTests.swift */,
+				3B2E451C1F2EB97200A5BBF9 /* Info.plist */,
+			);
+			path = SureWalkTests;
+			sourceTree = "<group>";
+		};
+		3B2E45241F2EB97200A5BBF9 /* SureWalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E45251F2EB97200A5BBF9 /* SureWalkUITests.swift */,
+				3B2E45271F2EB97200A5BBF9 /* Info.plist */,
+			);
+			path = SureWalkUITests;
+			sourceTree = "<group>";
+		};
+		3B2E45331F2EB99100A5BBF9 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E45341F2EB99B00A5BBF9 /* API.swift */,
+				3B2E45361F2EB9AB00A5BBF9 /* Sanitation.swift */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		3B2E45381F2EB9C000A5BBF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E45391F2EB9CD00A5BBF9 /* LocationCell.swift */,
+				3B2E453B1F2EB9DC00A5BBF9 /* AlertView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3B2E453D1F2EBA0700A5BBF9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E453E1F2EBA1B00A5BBF9 /* SignInViewController.swift */,
+				3B2E45401F2EBA2500A5BBF9 /* SignupViewController.swift */,
+				3B2E45421F2EBA3200A5BBF9 /* RootViewController.swift */,
+				3B2E45441F2EBA3A00A5BBF9 /* MenuViewController.swift */,
+				3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */,
+				3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */,
+				3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */,
+				3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */,
+				3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */,
+				3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */,
+				3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7A2E3D5845AD3CA04B0C974F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F89144D7481968D59AFB8465 /* Pods-SureWalk.debug.xcconfig */,
+				C75F87F5565EEC65961E69D7 /* Pods-SureWalk.release.xcconfig */,
+				15377E5072CDC2BB2CD9E21A /* Pods-SureWalkTests.debug.xcconfig */,
+				BAA8037143B26411B7B7E383 /* Pods-SureWalkTests.release.xcconfig */,
+				EA38198A8E3CA07BFFEE6A01 /* Pods-SureWalkUITests.debug.xcconfig */,
+				5FB731C182B7612E5006ECF5 /* Pods-SureWalkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B58480F13AF6440D3029907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBC7692054A96B749A7D98EB /* Pods_SureWalk.framework */,
+				E2E97C5F9C2E03A72F99F467 /* Pods_SureWalkTests.framework */,
+				437AA8CCCAF8DDAA0EA4E668 /* Pods_SureWalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B2E45011F2EB97200A5BBF9 /* SureWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2E452A1F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalk" */;
+			buildPhases = (
+				1325865B70AB8B9FCB02383E /* [CP] Check Pods Manifest.lock */,
+				3B2E44FE1F2EB97200A5BBF9 /* Sources */,
+				3B2E44FF1F2EB97200A5BBF9 /* Frameworks */,
+				3B2E45001F2EB97200A5BBF9 /* Resources */,
+				9687C1795EA27E543DB56A58 /* [CP] Embed Pods Frameworks */,
+				719FC17E2914A75D050DA883 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SureWalk;
+			productName = SureWalk;
+			productReference = 3B2E45021F2EB97200A5BBF9 /* SureWalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B2E45151F2EB97200A5BBF9 /* SureWalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2E452D1F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalkTests" */;
+			buildPhases = (
+				5070560EBAF44CFC1B3DC4A9 /* [CP] Check Pods Manifest.lock */,
+				3B2E45121F2EB97200A5BBF9 /* Sources */,
+				3B2E45131F2EB97200A5BBF9 /* Frameworks */,
+				3B2E45141F2EB97200A5BBF9 /* Resources */,
+				AF7E19126DDF2E28F0C52AFA /* [CP] Embed Pods Frameworks */,
+				3CBEF00ED1AFC592643CB6D2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B2E45181F2EB97200A5BBF9 /* PBXTargetDependency */,
+			);
+			name = SureWalkTests;
+			productName = SureWalkTests;
+			productReference = 3B2E45161F2EB97200A5BBF9 /* SureWalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B2E45201F2EB97200A5BBF9 /* SureWalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2E45301F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalkUITests" */;
+			buildPhases = (
+				FC82CFF6CFD2AD5BF5BCBB68 /* [CP] Check Pods Manifest.lock */,
+				3B2E451D1F2EB97200A5BBF9 /* Sources */,
+				3B2E451E1F2EB97200A5BBF9 /* Frameworks */,
+				3B2E451F1F2EB97200A5BBF9 /* Resources */,
+				5859AAF2D65F09466492F310 /* [CP] Embed Pods Frameworks */,
+				118B9C53A36DA480083AEB74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B2E45231F2EB97200A5BBF9 /* PBXTargetDependency */,
+			);
+			name = SureWalkUITests;
+			productName = SureWalkUITests;
+			productReference = 3B2E45211F2EB97200A5BBF9 /* SureWalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B2E44FA1F2EB97200A5BBF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "SureWalk Team";
+				TargetAttributes = {
+					3B2E45011F2EB97200A5BBF9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					3B2E45151F2EB97200A5BBF9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B2E45011F2EB97200A5BBF9;
+					};
+					3B2E45201F2EB97200A5BBF9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B2E45011F2EB97200A5BBF9;
+					};
+				};
+			};
+			buildConfigurationList = 3B2E44FD1F2EB97200A5BBF9 /* Build configuration list for PBXProject "SureWalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B2E44F91F2EB97200A5BBF9;
+			productRefGroup = 3B2E45031F2EB97200A5BBF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B2E45011F2EB97200A5BBF9 /* SureWalk */,
+				3B2E45151F2EB97200A5BBF9 /* SureWalkTests */,
+				3B2E45201F2EB97200A5BBF9 /* SureWalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B2E45001F2EB97200A5BBF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E45101F2EB97200A5BBF9 /* LaunchScreen.storyboard in Resources */,
+				3B2E450D1F2EB97200A5BBF9 /* Assets.xcassets in Resources */,
+				3B2E450B1F2EB97200A5BBF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E45141F2EB97200A5BBF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E451F1F2EB97200A5BBF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118B9C53A36DA480083AEB74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalkUITests/Pods-SureWalkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1325865B70AB8B9FCB02383E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CBEF00ED1AFC592643CB6D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalkTests/Pods-SureWalkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5070560EBAF44CFC1B3DC4A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5859AAF2D65F09466492F310 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalkUITests/Pods-SureWalkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719FC17E2914A75D050DA883 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalk/Pods-SureWalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9687C1795EA27E543DB56A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalk/Pods-SureWalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7E19126DDF2E28F0C52AFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SureWalkTests/Pods-SureWalkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC82CFF6CFD2AD5BF5BCBB68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B2E44FE1F2EB97200A5BBF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E454F1F2EBA7400A5BBF9 /* ScheduleViewController.swift in Sources */,
+				3B2E453F1F2EBA1B00A5BBF9 /* SignInViewController.swift in Sources */,
+				3B2E45471F2EBA4800A5BBF9 /* NavigationViewController.swift in Sources */,
+				3B2E45451F2EBA3A00A5BBF9 /* MenuViewController.swift in Sources */,
+				3B2E45431F2EBA3200A5BBF9 /* RootViewController.swift in Sources */,
+				3B2E45411F2EBA2500A5BBF9 /* SignupViewController.swift in Sources */,
+				3B2E45531F2EBA8D00A5BBF9 /* ProfileViewController.swift in Sources */,
+				3B2E454B1F2EBA5B00A5BBF9 /* MapViewController.swift in Sources */,
+				3B2E454D1F2EBA6B00A5BBF9 /* LocationsViewController.swift in Sources */,
+				3B2E453A1F2EB9CD00A5BBF9 /* LocationCell.swift in Sources */,
+				3B2E45371F2EB9AB00A5BBF9 /* Sanitation.swift in Sources */,
+				3B2E45351F2EB99B00A5BBF9 /* API.swift in Sources */,
+				3B2E45061F2EB97200A5BBF9 /* AppDelegate.swift in Sources */,
+				3B2E453C1F2EB9DC00A5BBF9 /* AlertView.swift in Sources */,
+				3B2E45511F2EBA8200A5BBF9 /* RequestViewController.swift in Sources */,
+				3B2E45491F2EBA5200A5BBF9 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E45121F2EB97200A5BBF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E451B1F2EB97200A5BBF9 /* SureWalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E451D1F2EB97200A5BBF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E45261F2EB97200A5BBF9 /* SureWalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B2E45181F2EB97200A5BBF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B2E45011F2EB97200A5BBF9 /* SureWalk */;
+			targetProxy = 3B2E45171F2EB97200A5BBF9 /* PBXContainerItemProxy */;
+		};
+		3B2E45231F2EB97200A5BBF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B2E45011F2EB97200A5BBF9 /* SureWalk */;
+			targetProxy = 3B2E45221F2EB97200A5BBF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B2E45091F2EB97200A5BBF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2E450A1F2EB97200A5BBF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B2E450E1F2EB97200A5BBF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2E450F1F2EB97200A5BBF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B2E45281F2EB97200A5BBF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B2E45291F2EB97200A5BBF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B2E452B1F2EB97200A5BBF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F89144D7481968D59AFB8465 /* Pods-SureWalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SureWalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B2E452C1F2EB97200A5BBF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75F87F5565EEC65961E69D7 /* Pods-SureWalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SureWalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3B2E452E1F2EB97200A5BBF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15377E5072CDC2BB2CD9E21A /* Pods-SureWalkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SureWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SureWalk.app/SureWalk";
+			};
+			name = Debug;
+		};
+		3B2E452F1F2EB97200A5BBF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA8037143B26411B7B7E383 /* Pods-SureWalkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SureWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SureWalk.app/SureWalk";
+			};
+			name = Release;
+		};
+		3B2E45311F2EB97200A5BBF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA38198A8E3CA07BFFEE6A01 /* Pods-SureWalkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SureWalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SureWalk;
+			};
+			name = Debug;
+		};
+		3B2E45321F2EB97200A5BBF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB731C182B7612E5006ECF5 /* Pods-SureWalkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SureWalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SureWalk-Team.SureWalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SureWalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B2E44FD1F2EB97200A5BBF9 /* Build configuration list for PBXProject "SureWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2E45281F2EB97200A5BBF9 /* Debug */,
+				3B2E45291F2EB97200A5BBF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2E452A1F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2E452B1F2EB97200A5BBF9 /* Debug */,
+				3B2E452C1F2EB97200A5BBF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2E452D1F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2E452E1F2EB97200A5BBF9 /* Debug */,
+				3B2E452F1F2EB97200A5BBF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2E45301F2EB97200A5BBF9 /* Build configuration list for PBXNativeTarget "SureWalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2E45311F2EB97200A5BBF9 /* Debug */,
+				3B2E45321F2EB97200A5BBF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B2E44FA1F2EB97200A5BBF9 /* Project object */;
+}

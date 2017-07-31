@@ -1,0 +1,6 @@
+framework module Pods_SureWalk {
+  umbrella header "Pods-SureWalk-umbrella.h"
+
+  export *
+  module * { export * }
+}
