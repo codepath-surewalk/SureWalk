@@ -1,0 +1,6 @@
+framework module Pods_SureWalkUITests {
+  umbrella header "Pods-SureWalkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
