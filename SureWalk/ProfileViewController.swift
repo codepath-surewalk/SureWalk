@@ -45,12 +45,12 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         profilePicture.layer.rasterizationScale = UIScreen.main.scale
         profilePicture.layer.shouldRasterize = true
         profilePicture.clipsToBounds = true
-        profilePicture.contentMode = .scaleAspectFill;
+        profilePicture.contentMode = .scaleAspectFill
         
         firstName.text = user["firstName"] as? String
         lastName.text = user["lastName"] as? String
         username.text = user["username"] as? String
-        phoneNumber.text = user["phone"] as? String
+        phoneNumber.text = String(user["phone"] as! Int)
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
@@ -107,15 +107,5 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         // Present the view controller
         self.frostedViewController.presentMenuViewController()
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

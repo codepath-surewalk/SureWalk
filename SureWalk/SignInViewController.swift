@@ -88,8 +88,8 @@ class SignInViewController: UIViewController {
     
     func shakeTextField(textField: UITextField!) {
         textField.shake(10, // 10 times
-            withDelta: 5.0,  // 5 points wide
-            speed: 0.03,     // 30ms per shake
+            withDelta: 5.0, // 5 points wide
+            speed: 0.03,    // 30ms per shake
             shakeDirection: ShakeDirection.horizontal)
     }
     
