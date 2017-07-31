@@ -32,6 +32,7 @@ iOS app for UT Austin's [SUREWalk program](http://utsg.org/projects/sure-walk/).
 
 🚫 The following functionality is under construction: 🔨
 - [ ] Build out profile page
+- [ ] Build out About page
 - [ ] Ability to add profile picture
 - [ ] Schedule rides
 - [ ] Better post-confirmation message
