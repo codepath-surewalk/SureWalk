@@ -632,27 +632,23 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-oS-QRk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-3S-1M3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-3S-1M3">
                                 <rect key="frame" x="27" y="72" width="321" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-7B-w3f">
-                                        <rect key="frame" x="28" y="8" width="285" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgb-7B-w3f">
+                                        <rect key="frame" x="29" y="8" width="284" height="30"/>
                                         <color key="textColor" red="0.74901960784313726" green="0.3411764705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-bJ-QRc">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-bJ-QRc">
                                         <rect key="frame" x="28" y="47" width="285" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.74901960784313726" green="0.3411764705882353" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-oV-vlL">
-                                        <rect key="frame" x="109" y="84" width="103" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq4-oV-vlL">
+                                        <rect key="frame" x="130" y="85" width="60" height="30"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Confirm">
@@ -662,16 +658,38 @@
                                             <action selector="onConfirm:" destination="pfG-bX-wME" eventType="touchUpInside" id="2aX-7K-tNE"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="map-pin-red-small" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-YH-rU2">
-                                        <rect key="frame" x="5" y="11" width="15" height="24"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="map-pin-green-small" translatesAutoresizingMaskIntoConstraints="NO" id="DQA-Ae-aX0">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="map-pin-green-small" translatesAutoresizingMaskIntoConstraints="NO" id="DQA-Ae-aX0">
                                         <rect key="frame" x="6" y="48" width="15" height="24"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="SoB-Jv-x7w"/>
+                                            <constraint firstAttribute="height" constant="24" id="TXg-kc-rrY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="map-pin-red-small" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-YH-rU2">
+                                        <rect key="frame" x="6" y="11" width="15" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="UnD-Wb-R0b"/>
+                                            <constraint firstAttribute="width" constant="15" id="wDR-dI-Jf6"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZuB-YH-rU2" firstAttribute="leading" secondItem="n7w-3S-1M3" secondAttribute="leading" constant="6" id="8Y3-C9-DKa"/>
+                                    <constraint firstItem="FCy-bJ-QRc" firstAttribute="leading" secondItem="DQA-Ae-aX0" secondAttribute="trailing" constant="7" id="HAI-Dz-nkl"/>
+                                    <constraint firstItem="dq4-oV-vlL" firstAttribute="centerX" secondItem="n7w-3S-1M3" secondAttribute="centerX" id="IpO-qU-MeZ"/>
+                                    <constraint firstItem="Xgb-7B-w3f" firstAttribute="top" secondItem="n7w-3S-1M3" secondAttribute="top" constant="8" id="Kiz-9n-nmS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xgb-7B-w3f" secondAttribute="trailing" constant="8" id="LQa-sg-737"/>
+                                    <constraint firstAttribute="bottom" secondItem="dq4-oV-vlL" secondAttribute="bottom" constant="9" id="OEw-vN-zcb"/>
+                                    <constraint firstItem="FCy-bJ-QRc" firstAttribute="top" secondItem="Xgb-7B-w3f" secondAttribute="bottom" constant="9" id="VyT-wT-joH"/>
+                                    <constraint firstItem="Xgb-7B-w3f" firstAttribute="leading" secondItem="ZuB-YH-rU2" secondAttribute="trailing" constant="8" id="XHB-b5-rVe"/>
+                                    <constraint firstAttribute="bottom" secondItem="DQA-Ae-aX0" secondAttribute="bottom" constant="52" id="dfM-i8-WlU"/>
+                                    <constraint firstItem="dq4-oV-vlL" firstAttribute="top" secondItem="FCy-bJ-QRc" secondAttribute="bottom" constant="8" id="eEO-k9-hMZ"/>
+                                    <constraint firstItem="DQA-Ae-aX0" firstAttribute="leading" secondItem="n7w-3S-1M3" secondAttribute="leading" constant="6" id="gJQ-8v-W1i"/>
+                                    <constraint firstItem="ZuB-YH-rU2" firstAttribute="top" secondItem="n7w-3S-1M3" secondAttribute="top" constant="11" id="kKe-Le-D4G"/>
+                                    <constraint firstAttribute="trailing" secondItem="FCy-bJ-QRc" secondAttribute="trailing" constant="8" id="nJa-fx-WRL"/>
+                                    <constraint firstItem="DQA-Ae-aX0" firstAttribute="top" secondItem="ZuB-YH-rU2" secondAttribute="bottom" constant="13" id="wXL-ns-PbI"/>
+                                </constraints>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="map-pin-red" translatesAutoresizingMaskIntoConstraints="NO" id="f6V-iM-2Wy">
                                 <rect key="frame" x="172" y="320" width="30" height="48"/>
@@ -705,27 +723,36 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBU-Jr-AiO" customClass="AlertView" customModule="SureWalk" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBU-Jr-AiO" customClass="AlertView" customModule="SureWalk" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="375" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-KM-5Tb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-KM-5Tb">
                                         <rect key="frame" x="352" y="2" width="20" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="D0r-mf-py2"/>
+                                            <constraint firstAttribute="height" constant="22" id="TEm-G8-Jmz"/>
+                                        </constraints>
                                         <state key="normal" image="orange-close"/>
                                         <connections>
                                             <action selector="closeButtonPressed:" destination="rBU-Jr-AiO" eventType="touchUpInside" id="QSm-d8-YBa"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Internet Connection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASM-hA-ytF">
-                                        <rect key="frame" x="114" y="2" width="146" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASM-hA-ytF">
+                                        <rect key="frame" x="116.5" y="4.5" width="141.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.74901960779999999" green="0.3411764706" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4IO-KM-5Tb" secondAttribute="trailing" constant="3" id="4Ch-hv-39D"/>
+                                    <constraint firstItem="ASM-hA-ytF" firstAttribute="centerY" secondItem="rBU-Jr-AiO" secondAttribute="centerY" id="5gu-8f-7ex"/>
+                                    <constraint firstItem="4IO-KM-5Tb" firstAttribute="top" secondItem="rBU-Jr-AiO" secondAttribute="top" constant="2" id="6qz-92-x6R"/>
+                                    <constraint firstAttribute="height" constant="25" id="EcJ-Jc-zVl"/>
+                                    <constraint firstAttribute="bottom" secondItem="4IO-KM-5Tb" secondAttribute="bottom" constant="1" id="QST-HK-FOA"/>
+                                    <constraint firstItem="ASM-hA-ytF" firstAttribute="centerX" secondItem="rBU-Jr-AiO" secondAttribute="centerX" id="gm8-Ch-RNF"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="alertLabel" destination="ASM-hA-ytF" id="e2f-th-ia0"/>
                                 </connections>
@@ -739,12 +766,20 @@
                         <constraints>
                             <constraint firstItem="f6V-iM-2Wy" firstAttribute="centerY" secondItem="FUF-oS-QRk" secondAttribute="centerY" id="1mX-mp-NPo"/>
                             <constraint firstAttribute="trailing" secondItem="FUF-oS-QRk" secondAttribute="trailing" id="3Fa-FH-Qac"/>
+                            <constraint firstAttribute="trailing" secondItem="rBU-Jr-AiO" secondAttribute="trailing" id="HsY-5J-JBo"/>
                             <constraint firstItem="FUF-oS-QRk" firstAttribute="leading" secondItem="Rn2-JE-VdA" secondAttribute="leading" id="LCI-jA-Fh2"/>
+                            <constraint firstItem="n7w-3S-1M3" firstAttribute="centerX" secondItem="Rn2-JE-VdA" secondAttribute="centerX" id="M43-hT-oIH"/>
+                            <constraint firstItem="rBU-Jr-AiO" firstAttribute="leading" secondItem="Rn2-JE-VdA" secondAttribute="leading" id="Ob4-Zq-Uez"/>
                             <constraint firstItem="ooM-fL-SeU" firstAttribute="top" secondItem="FUF-oS-QRk" secondAttribute="bottom" id="PGd-00-SJS"/>
+                            <constraint firstItem="n7w-3S-1M3" firstAttribute="leading" secondItem="Rn2-JE-VdA" secondAttribute="leading" constant="27" id="XkG-nl-PX5"/>
+                            <constraint firstItem="n7w-3S-1M3" firstAttribute="top" secondItem="QDK-Ep-0Q0" secondAttribute="bottom" constant="8" id="YIu-lE-yqP"/>
+                            <constraint firstItem="gOn-vN-o0Y" firstAttribute="top" secondItem="n7w-3S-1M3" secondAttribute="bottom" constant="123" id="dvF-69-gbf"/>
                             <constraint firstItem="gOn-vN-o0Y" firstAttribute="centerY" secondItem="Rn2-JE-VdA" secondAttribute="centerY" constant="9.5" id="ilZ-iz-UGG"/>
+                            <constraint firstAttribute="trailing" secondItem="n7w-3S-1M3" secondAttribute="trailing" constant="27" id="iyW-zb-a2K"/>
                             <constraint firstItem="f6V-iM-2Wy" firstAttribute="centerX" secondItem="FUF-oS-QRk" secondAttribute="centerX" id="nfn-RE-M14"/>
                             <constraint firstItem="gOn-vN-o0Y" firstAttribute="centerX" secondItem="Rn2-JE-VdA" secondAttribute="centerX" id="sAc-7H-Xo9"/>
                             <constraint firstItem="FUF-oS-QRk" firstAttribute="top" secondItem="Rn2-JE-VdA" secondAttribute="top" constant="20" id="y1d-TH-DC3"/>
+                            <constraint firstItem="rBU-Jr-AiO" firstAttribute="top" secondItem="QDK-Ep-0Q0" secondAttribute="bottom" id="z0m-TD-WGC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Iwv-HJ-fTL"/>
@@ -1085,7 +1120,7 @@
         <image name="surewalkGirl" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VX3-df-ksx"/>
         <segue reference="fl1-DG-mZg"/>
+        <segue reference="VX3-df-ksx"/>
     </inferredMetricsTieBreakers>
 </document>
