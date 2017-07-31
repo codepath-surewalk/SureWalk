@@ -101,17 +101,11 @@
                                     <constraint firstAttribute="bottom" secondItem="S3j-Qc-RgA" secondAttribute="bottom" id="vFn-8i-Ax3"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't need to walk alone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHy-1b-Eck">
-                                <rect key="frame" x="28" y="196" width="227" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="surewalkGirl" translatesAutoresizingMaskIntoConstraints="NO" id="75d-83-fiF">
-                                <rect key="frame" x="190" y="79" width="229" height="225"/>
+                                <rect key="frame" x="165" y="72" width="225" height="225"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UT Austin's" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHy-e9-eLa">
-                                <rect key="frame" x="28" y="85" width="88" height="21"/>
+                                <rect key="frame" x="32" y="85" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -150,8 +144,18 @@
                                     <outlet property="alertLabel" destination="zgI-Zj-qd9" id="Klt-xi-n5V"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't need to walk alone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZk-Au-mBc">
+                                <rect key="frame" x="32" y="184" width="169" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="L21-5E-PTX"/>
+                                    <constraint firstAttribute="height" constant="62" id="dvR-Pm-9ot"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SURE Walk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ1-wN-br0">
-                                <rect key="frame" x="28" y="130" width="171" height="42"/>
+                                <rect key="frame" x="31" y="122" width="171" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -159,32 +163,31 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.58839038725779191" blue="0.16266319979203137" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="GHy-1b-Eck" secondAttribute="trailing" constant="120" id="1dy-AU-qnt"/>
-                            <constraint firstItem="GHy-1b-Eck" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="4ed-XP-Lp3"/>
                             <constraint firstItem="kFJ-nG-TpN" firstAttribute="leading" secondItem="vQu-jO-XAc" secondAttribute="leading" id="579-T2-2gB"/>
-                            <constraint firstItem="vtW-1u-TIC" firstAttribute="top" secondItem="75d-83-fiF" secondAttribute="bottom" constant="107" id="5q0-8t-FqY"/>
+                            <constraint firstItem="vtW-1u-TIC" firstAttribute="top" secondItem="75d-83-fiF" secondAttribute="bottom" constant="114" id="5q0-8t-FqY"/>
                             <constraint firstItem="szE-Ec-gM3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BMH-pU-TWl"/>
-                            <constraint firstItem="VJ1-wN-br0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-182.5" id="BhW-zz-p8h"/>
+                            <constraint firstItem="VJ1-wN-br0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-190.5" id="BhW-zz-p8h"/>
                             <constraint firstItem="szE-Ec-gM3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bqv-68-iPb"/>
                             <constraint firstItem="vtW-1u-TIC" firstAttribute="top" secondItem="yzp-GJ-hRn" secondAttribute="bottom" id="GwB-g9-qh7"/>
                             <constraint firstItem="Bie-I4-Vmt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IJH-cA-J4R"/>
                             <constraint firstItem="CZ0-j6-D9x" firstAttribute="leading" secondItem="vQu-jO-XAc" secondAttribute="leading" id="Lzv-7z-432"/>
-                            <constraint firstItem="GHy-1b-Eck" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="leading" id="NO0-2z-MMq"/>
                             <constraint firstAttribute="trailing" secondItem="Bie-I4-Vmt" secondAttribute="trailing" id="ObF-Re-ZiM"/>
+                            <constraint firstItem="eZk-Au-mBc" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="leading" id="P4k-9z-pzw"/>
                             <constraint firstItem="vtW-1u-TIC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qbg-cO-Xwc"/>
                             <constraint firstItem="vtW-1u-TIC" firstAttribute="top" secondItem="yzp-GJ-hRn" secondAttribute="bottom" id="TWp-I5-e3E"/>
-                            <constraint firstAttribute="trailing" secondItem="75d-83-fiF" secondAttribute="trailing" constant="-44" id="TnA-yh-QsI"/>
+                            <constraint firstAttribute="trailing" secondItem="75d-83-fiF" secondAttribute="trailing" constant="-15" id="TnA-yh-QsI"/>
                             <constraint firstAttribute="trailing" secondItem="vtW-1u-TIC" secondAttribute="trailing" id="WQc-kU-zke"/>
+                            <constraint firstItem="VJ1-wN-br0" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="leading" constant="-1" id="Y9D-CR-aut"/>
                             <constraint firstAttribute="trailing" secondItem="yzp-GJ-hRn" secondAttribute="trailing" id="YvO-n4-uAB"/>
-                            <constraint firstItem="75d-83-fiF" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="trailing" constant="74" id="adU-3u-X3I"/>
+                            <constraint firstItem="75d-83-fiF" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="trailing" constant="45" id="adU-3u-X3I"/>
                             <constraint firstItem="GHy-e9-eLa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="avg-5Z-UJF"/>
                             <constraint firstAttribute="trailing" secondItem="szE-Ec-gM3" secondAttribute="trailing" id="ccx-7x-OZi"/>
-                            <constraint firstItem="yzp-GJ-hRn" firstAttribute="top" secondItem="GHy-1b-Eck" secondAttribute="bottom" constant="66" id="dap-IJ-l4p"/>
                             <constraint firstItem="yzp-GJ-hRn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mSW-xA-p0V"/>
-                            <constraint firstItem="VJ1-wN-br0" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="leading" id="r1d-eu-XII"/>
+                            <constraint firstItem="VJ1-wN-br0" firstAttribute="leading" secondItem="GHy-e9-eLa" secondAttribute="leading" constant="-1" id="r1d-eu-XII"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bie-I4-Vmt" secondAttribute="bottom" id="uAr-09-glX"/>
                             <constraint firstItem="Bie-I4-Vmt" firstAttribute="top" secondItem="vtW-1u-TIC" secondAttribute="bottom" id="ubP-9T-2z7"/>
-                            <constraint firstItem="75d-83-fiF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="uiU-xl-bKg"/>
+                            <constraint firstItem="75d-83-fiF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uiU-xl-bKg"/>
+                            <constraint firstItem="eZk-Au-mBc" firstAttribute="top" secondItem="VJ1-wN-br0" secondAttribute="bottom" constant="20" id="zQo-fT-l4A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Last, First" id="K6h-EG-y7V">
@@ -1122,7 +1125,7 @@
         <image name="surewalkGirl" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VX3-df-ksx"/>
+        <segue reference="FME-HZ-Zpj"/>
         <segue reference="fl1-DG-mZg"/>
     </inferredMetricsTieBreakers>
 </document>
