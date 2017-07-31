@@ -25,10 +25,10 @@
 		3B2E45471F2EBA4800A5BBF9 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */; };
 		3B2E45491F2EBA5200A5BBF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */; };
 		3B2E454B1F2EBA5B00A5BBF9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */; };
-		3B2E454D1F2EBA6B00A5BBF9 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */; };
 		3B2E454F1F2EBA7400A5BBF9 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */; };
 		3B2E45511F2EBA8200A5BBF9 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */; };
 		3B2E45531F2EBA8D00A5BBF9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */; };
+		3B2E455A1F2EEA8200A5BBF9 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E45591F2EEA8200A5BBF9 /* LocationsViewController.swift */; };
 		466B0AF008370EE8370EA7EB /* Pods_SureWalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E97C5F9C2E03A72F99F467 /* Pods_SureWalkTests.framework */; };
 		A115DF435E58A2ECA063E7D2 /* Pods_SureWalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437AA8CCCAF8DDAA0EA4E668 /* Pods_SureWalkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -75,10 +75,10 @@
 		3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3B2E45591F2EEA8200A5BBF9 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		437AA8CCCAF8DDAA0EA4E668 /* Pods_SureWalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SureWalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB731C182B7612E5006ECF5 /* Pods-SureWalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkUITests/Pods-SureWalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BAA8037143B26411B7B7E383 /* Pods-SureWalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SureWalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SureWalkTests/Pods-SureWalkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 				3B2E45461F2EBA4800A5BBF9 /* NavigationViewController.swift */,
 				3B2E45481F2EBA5200A5BBF9 /* HomeViewController.swift */,
 				3B2E454A1F2EBA5B00A5BBF9 /* MapViewController.swift */,
-				3B2E454C1F2EBA6B00A5BBF9 /* LocationsViewController.swift */,
+				3B2E45591F2EEA8200A5BBF9 /* LocationsViewController.swift */,
 				3B2E454E1F2EBA7400A5BBF9 /* ScheduleViewController.swift */,
 				3B2E45501F2EBA8200A5BBF9 /* RequestViewController.swift */,
 				3B2E45521F2EBA8D00A5BBF9 /* ProfileViewController.swift */,
@@ -515,12 +515,12 @@
 				3B2E454F1F2EBA7400A5BBF9 /* ScheduleViewController.swift in Sources */,
 				3B2E453F1F2EBA1B00A5BBF9 /* SignInViewController.swift in Sources */,
 				3B2E45471F2EBA4800A5BBF9 /* NavigationViewController.swift in Sources */,
+				3B2E455A1F2EEA8200A5BBF9 /* LocationsViewController.swift in Sources */,
 				3B2E45451F2EBA3A00A5BBF9 /* MenuViewController.swift in Sources */,
 				3B2E45431F2EBA3200A5BBF9 /* RootViewController.swift in Sources */,
 				3B2E45411F2EBA2500A5BBF9 /* SignupViewController.swift in Sources */,
 				3B2E45531F2EBA8D00A5BBF9 /* ProfileViewController.swift in Sources */,
 				3B2E454B1F2EBA5B00A5BBF9 /* MapViewController.swift in Sources */,
-				3B2E454D1F2EBA6B00A5BBF9 /* LocationsViewController.swift in Sources */,
 				3B2E453A1F2EB9CD00A5BBF9 /* LocationCell.swift in Sources */,
 				3B2E45371F2EB9AB00A5BBF9 /* Sanitation.swift in Sources */,
 				3B2E45351F2EB99B00A5BBF9 /* API.swift in Sources */,
