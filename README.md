@@ -29,6 +29,7 @@ iOS app for UT Austin's [SUREWalk program](http://utsg.org/projects/sure-walk/).
   - [X] Path-to-destination overlay
 
 - [X] No Internet connection error
+  <img src='./READMEGifs/alert.gif' title='Logout' width='200' alt='Alert' />
 
 🚫 The following functionality is under construction: 🔨
 - [ ] Build out profile page
